@@ -30,8 +30,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/THM_OTT") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/tamil_hackers_moviess") ]  ]))
 
 
 
@@ -47,7 +47,7 @@ async def send_doc(client,message):
        		return
        date = message.date
        _used_date = find_one(user_id)
-       used_date = _used_date["date"]      
+       used_date = _used_date[" "]      
        c_time = time.time()
        LIMIT = 240
        then = used_date+ LIMIT
